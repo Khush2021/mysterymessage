@@ -17,7 +17,7 @@ async function dbConnect() : Promise<void> { // in TS, void is different from cp
         console.log("DB connected successfully");
 
     } catch (error) {
-        console.log("Database connection failed");
+        console.log("DB connection failed");
         process.exit(1);
     }
 }
