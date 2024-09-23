@@ -14,7 +14,7 @@ async function dbConnect() : Promise<void> { // in TS, void is different from cp
     try {
         const db = await mongoose.connect(process.env.MONGO_URI || "");
         connection.isConnected = db.connections[0].readyState;
-        console.log("DB connected successfully!");
+        console.log("DB connected successfully");
 
     } catch (error) {
         console.log("Database connection failed");
